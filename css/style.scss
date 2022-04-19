@@ -2,19 +2,42 @@ $poop: yellow;
 
 * {
   color: white;
+  box-sizing: border-box;
 }
 
-.nav {
-  position: absolute;
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
   width: 100%;
-  overflow: hidden;
-  height: 80px;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-
+  height: 15vh;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  z-index: 1;
 }
 
-.nav a,
-.nav a:hover {
+.logo {
+  margin-left: 12px;
+}
+
+/* hamburger menu icon */
+.menu {
+  margin-right: 30px;
+
+  div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+}
+
+.navbar a,
+.navbar a:hover {
   color: white;
   text-decoration: none;
 }
@@ -30,10 +53,25 @@ $poop: yellow;
   background-color: #000000;
   border-top: #FFFFFF solid 1px;
   border-bottom: #FFFFFF solid 1px;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
 }
 
-.plant-art {
-  background-color: black;
+.line-drawing {
+  position: absolute;
+}
+
+.line-drawing-left {
+  bottom: 0;
+  left: -25%;
+  width: 75vw;
+}
+
+.line-drawing-right {
+  bottom: 0;
+  right: -25%;
+  width: 75vw;
 }
 
 .content p,
@@ -44,6 +82,36 @@ h2 {
 .content p {
   margin: auto 10vw;
   padding-bottom: 15px;
+}
+
+.container h2{
+  color: black;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+.gallery img {
+  max-width: 90%;
+  margin: auto;
+}
+.photo-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.photo-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.photo-3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.photo-4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.photo-5 {
+  grid-area: 3 / 1 / 4 / 3;
 }
 
 .banner2 {
@@ -73,7 +141,7 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
-  .hide-small {
+  .navbar li .hide-small {
     display: none;
   }
 }
