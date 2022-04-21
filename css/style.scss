@@ -28,13 +28,7 @@ pushed all the way to the right (parent display is flex)*/
 
 /* hamburger menu icon */
 .nav-toggle {
-  margin-right: 3vh;
-  div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-  }
+  display: none;
 }
 
 .navbar a,
@@ -174,9 +168,17 @@ img.photo-5{
 }
 
 @media screen and (max-width: 700px) {
-  .navbar li .hide-small {
+  .nav-items {
     display: none;
   }
-  .nav-link {
+  .nav-toggle {
+    display: block;
+    margin-right: 3vh;
+    div {
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
   }
 }
