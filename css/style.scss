@@ -12,22 +12,24 @@ body {
 .navbar {
   display: flex;
   width: 100%;
-  height: 15vh;
+  height: 12vh;
   position: fixed;
   align-items: center;
-  justify-content: space-between;
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   z-index: 1;
+  border: none;
 }
 
+/* cool trick: margin-right: auto on this makes rest of items get
+pushed all the way to the right (parent display is flex)*/
 .logo {
-  margin-left: 12px;
+  margin-left: 2vh;
+  margin-right: auto;
 }
 
 /* hamburger menu icon */
-.menu {
-  margin-right: 30px;
-
+.nav-toggle {
+  margin-right: 3vh;
   div {
     width: 35px;
     height: 3px;
@@ -54,8 +56,15 @@ body {
   border-top: #FFFFFF solid 1px;
   border-bottom: #FFFFFF solid 1px;
   position: relative;
-  height: 50vh;
   overflow: hidden;
+}
+
+.content-1 {
+  height: 50vh;
+}
+
+.content-2 {
+  height: 70vh;
 }
 
 .line-drawing {
@@ -89,29 +98,25 @@ h2 {
 }
 
 .gallery {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
 }
-.gallery img {
-  max-width: 90%;
-  margin: auto;
+
+.gallery .col {
 }
 .photo-1 {
-  grid-area: 1 / 1 / 2 / 2;
 }
 .photo-2 {
-  grid-area: 1 / 2 / 2 / 3;
 }
 .photo-3 {
-  grid-area: 2 / 1 / 3 / 2;
 }
 .photo-4 {
-  grid-area: 2 / 2 / 3 / 3;
 }
 .photo-5 {
-  grid-area: 3 / 1 / 4 / 3;
 }
 
 .banner2 {
@@ -123,7 +128,16 @@ h2 {
 
 .footer {
   display: block;
+  position: relative;
+  height: 50vh;
   background-color: #000000;
+  padding: 1px 0 10px 0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.button-gallery {
+  margin: 90px auto;
 }
 
 .button {
@@ -132,16 +146,25 @@ h2 {
   width: 80vw;
   border: #FFFFFF solid 1px;
   border-radius: 30px;
+
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
-.button p {
-  text-align: center;
-  margin: 0;
-  padding: 15px 0;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar li .hide-small {
     display: none;
+  }
+  .nav-link {
   }
 }
