@@ -2,7 +2,6 @@ $poop: yellow;
 
 * {
   color: white;
-  box-sizing: border-box;
 }
 
 body {
@@ -99,6 +98,16 @@ h2 {
 
 .gallery {
   margin-bottom: 20px;
+
+  .left {
+    padding-left: 0;
+    padding-right: 7.5px;
+  }
+
+  .right {
+    padding-right: 0;
+    padding-left: 7.5px;
+  }
 
   img {
     max-width: 100%;
