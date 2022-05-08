@@ -37,6 +37,10 @@ pushed all the way to the right (parent display is flex)*/
   text-decoration: none;
 }
 
+.nav-items {
+  position: fixed;
+}
+
 .banner1 {
   background-image: url("../assets/photos/Artboard 6.jpg");
   background-repeat: no-repeat;
