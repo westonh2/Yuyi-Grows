@@ -39,6 +39,8 @@ pushed all the way to the right (parent display is flex)*/
 
 .nav-items {
   position: fixed;
+  top: 40vh;
+  left: 50%;
   bottom: 0;
 }
 
@@ -180,6 +182,7 @@ img.photo-5{
   .nav-toggle {
     display: block;
     margin-right: 3vh;
+    z-index: 1;
     div {
       width: 35px;
       height: 3px;
@@ -187,4 +190,15 @@ img.photo-5{
       margin: 6px 0;
     }
   }
+}
+.nav-toggle1 {
+  position: fixed;
+  top: 12vh;
+  left: 0;
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 26px;
+  line-height: 3;
+  text-align: center;
 }
