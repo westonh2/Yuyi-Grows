@@ -84,15 +84,27 @@ pushed all the way to the right (parent display is flex)*/
 
 .sales-menu-item {
   display: block;
-  border-bottom: #FFFFFF solid 2px;
   width: 45%;
   padding-bottom: 5px;
   text-align: center;
   a {
     color: white;
   }
-  a:hover {
-    text-decoration: none;
+}
+
+.sales-menu-item:hover{
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: #FFFFFF solid 2px;
+
+}
+
+.unselected {
+  border-bottom: #515151 solid 1px;
+  span {
+    color: #515151;
   }
 }
 
@@ -106,16 +118,18 @@ pushed all the way to the right (parent display is flex)*/
 }
 
 .sales-item {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 1%;
 }
 
 .sales-item-img{
   display: block;
-  width: 85%;
+  width: 100%;
 }
 
 .sales-item-title {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .sales-item-description {
@@ -209,13 +223,16 @@ img.photo-5{
   background-size: 100%;
 }
 
+.footer-home {
+  margin-top: 20px;
+}
+
 .footer {
   display: block;
   position: relative;
   height: 60vh;
   background-color: #000000;
   padding: 1px 0 10px 0;
-  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -246,6 +263,11 @@ img.photo-5{
 
 .sales-item-buttons {
   display: flex;
+  margin-top: auto;
+  height: 4.5vh;
+  a {
+    margin-bottom: 0;
+  }
 }
 
 .sales-item-button {
@@ -255,10 +277,9 @@ img.photo-5{
   border: #FFFFFF solid 1px;
   border-radius: 30px;
   text-align: center;
-  p {
+  span {
+    font-size: 9px;
     text-align: center;
-    margin: 0;
-    padding: 5px 0;
   }
   a {
     text-decoration: none;
