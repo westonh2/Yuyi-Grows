@@ -74,6 +74,89 @@ pushed all the way to the right (parent display is flex)*/
   display: block;
 }
 
+.grow-guides-content {
+  background-color: #000000;
+  padding-top: 15vh;
+  display: block;
+  padding-bottom: 8vh;
+  .grow-guides-item {
+    background-color: #000000;
+    margin: 5vh 3% 0 3%;
+    border-bottom: #FFFFFF solid 1px;
+    img {
+      width: 100%;
+    }
+    .image {
+    }
+    .caption-title {
+      margin-top: 10px;
+      margin-bottom: 1px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .caption-description {
+      font-size: 11px;
+      margin-bottom: 2vh;
+    }
+    .button-column {
+      padding-left: 0;
+    }
+    .grow-guides-button {
+      height: 40px;
+      text-align: center;
+      a {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        color: #FFFFFF;
+      }
+      p {
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.grow-guides-plant-content {
+  background-color: #000000;
+  padding-top: 15vh;
+  display: block;
+  padding-bottom: 8vh;
+  .plant-header {
+    width: 80%;
+    margin: auto;
+    .plant-header-large {
+      font-size: 38px;
+    }
+  }
+  .description {
+    margin: 0 3%;
+    border-bottom: #FFFFFF solid 1px;
+    .plant-image img {
+      width: 100%;
+    }
+    .description-text {
+      margin: 3vh 4vh 0 4vh;
+      .description-header {
+        font-size: 26px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .content-expand {
+    margin: 0 3%;
+    border-bottom: #FFFFFF solid 1px;
+
+  }
+  .potting-media {
+  }
+  .care {
+  }
+
+}
+
 .sales-menu {
   display: flex;
   justify-content: center;
@@ -166,6 +249,7 @@ pushed all the way to the right (parent display is flex)*/
 
 .content p,
 .content-no-bottom-border p,
+h1,
 h2,
 h3 {
   text-align: center;
@@ -243,10 +327,8 @@ img.photo-5{
 .button {
   margin: 10px auto;
   background-color: #272727;
-  width: 80vw;
   border: #FFFFFF solid 1px;
   border-radius: 30px;
-
   p {
     text-align: center;
     margin: 0;
@@ -259,6 +341,10 @@ img.photo-5{
     cursor: pointer;
     text-decoration: none;
   }
+}
+
+.button-large {
+  width: 80vw;
 }
 
 .sales-item-buttons {
@@ -286,10 +372,10 @@ img.photo-5{
     font-size: 9px;
     color: white;
   }
-  a:hover {
-    cursor: pointer;
-    text-decoration: none;
-  }
+}
+
+.sales-item-button:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
