@@ -145,10 +145,23 @@ pushed all the way to the right (parent display is flex)*/
       }
     }
   }
-  .content-expand {
+  .expandable-menu {
     margin: 0 3%;
     border-bottom: #FFFFFF solid 1px;
-
+    margin-top: 16px;
+    padding-bottom: 16px;
+  }
+  .expandable-menu-title {
+    font-size: 30px;
+  }
+  .dropdown-icon {
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+  }
+  .dropdown-icon:hover {
+    text-decoration: none;
   }
   .potting-media {
   }
