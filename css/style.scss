@@ -82,6 +82,8 @@ pushed all the way to the right (parent display is flex)*/
   }
 }
 
+
+
 .grow-guides-content {
   background-color: #000000;
   padding-top: 15vh;
@@ -163,6 +165,7 @@ pushed all the way to the right (parent display is flex)*/
   }
   .expandable-menu-title {
     font-size: 30px;
+    margin-right: auto;
   }
   .dropdown-icon {
     padding: 0;
@@ -172,6 +175,18 @@ pushed all the way to the right (parent display is flex)*/
   }
   .dropdown-icon:hover {
     text-decoration: none;
+  }
+  .collapsible {
+    margin: 0 3%;
+    border-bottom: #FFFFFF solid 1px;
+    margin-top: 16px;
+    width: 90vw;
+    height: 60px;
+    display: flex;
+  }
+  .contents {
+    width: 80vw;
+    margin: auto;
   }
   .potting-media {
   }
