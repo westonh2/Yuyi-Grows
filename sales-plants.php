@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body>
+
+
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/yuyi-logo.svg"></img>
+        <span>@Yuyi_grows</span>
+      </a>
+      <a href="#" class="nav-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+      <nav class="nav-items">
+        <div class="nav-link">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link">
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="nav-link">
+          <a href="#">Sales</a>
+        </div>
+        <div class="nav-link">
+          <a href="Grow-Guides.html">Grow Guides</a>
+        </div>
+        <div class="nav-link" id="toggler">
+          <a href="#" class="nav-toggle" onclick="classToggle()">Close</a>
+        </div>
+      </nav>
+    </div>
+
+  <div class="sales-content">
+    <h2>Sales</h2>
+    <div class="sales-menu">
+      <a href="#" class="sales-menu-item selected">
+        <span>PLANTS</span>
+      </a>
+      <a href="sales-accessories.html" class="sales-menu-item unselected">
+        <span id="right">ACCESSORIES</span>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 sales-column">
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <?php
+          $title = "POOP-EATING PLANT STARTER PACK";
+
+          include "sales-description.php";
+        ?>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <span class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</span>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <div class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</div>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sales-item" id="bottom">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <div class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</div>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 sales-column">
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <div class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</div>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <div class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</div>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <div class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</div>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row sales-item">
+      <div class="col-xs-4">
+        <img src="assets/photos/Artboard 6.jpg" class="sales-item-img">
+      </div>
+      <div class="col-xs-8 sales-item-column">
+        <div class="sales-item-title">CARNIVOROUS PLANT STARTER PACK</div>
+        <div class="sales-item-description">1 Venus Fly Trap, 1 Sundew, 1 Nepenthes, 1 Pinguicula</div>
+        <div class="sales-item-buttons">
+          <a href="#" class="sales-item-button">
+            <span>DETAILS</span>
+          </a>
+          <a href="#" class="sales-item-button">
+            <span>+ ADD TO CART</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer">
+    <h2>Related Links</h2>
+    <div class="button button-large">
+      <a href="https://www.instagram.com/yuyi_grows/" target="_blank"><p>Instagram</p></a>
+    </div>
+    <div class="button button-large">
+      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi2oZTH96X3AhXhqXIEHRmDBjEQFnoECBIQAQ&url=https%3A%2F%2Fopen.spotify.com%2Fshow%2F7oBw4FsMWNpEOmO5v8WsMf&usg=AOvVaw2L386ahkZXozIn5CzEaCP_" target="_blank"><p>Nature's Wonders Podcast</p></a>
+    </div>
+
+    <img src="assets/line-drawings/heli-lines-l.svg" class="line-drawing line-drawing-left">
+    <img src="assets/line-drawings/heli-lines-r.svg" class="line-drawing line-drawing-right">
+  </div>
+
+  <script src="js/index.js"></script>
+  </body>
+</html>
